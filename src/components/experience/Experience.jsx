@@ -67,7 +67,6 @@ const Experience = () => {
             </aside>
             <span>DCG Date Core Systems (India) Pvt. Ltd.</span>
           </div>
-          <h3></h3>
           <p className="text-light">Software Engineer</p>
           <p className="text-light">03/2017 - 06/2019</p>
           <p className="text-light">

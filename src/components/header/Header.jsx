@@ -5,7 +5,7 @@ import me from "../../assets/me-new-removebg.png";
 import HeaderSocials from "./HeaderSocials";
 import { useContext } from "react";
 import { ThemeContext } from "../context/theme-context";
-import resumeIcon from "../../assets/download_cv_icon_dark.png"
+import resumeIcon from "../../assets/download_cv_icon_dark.png";
 
 const Header = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -58,11 +58,19 @@ const Header = () => {
         <h1>Joydeep Roy</h1>
         <h3 className="text-light">
           {" "}
-          <a href="https://www.google.com/search?q=mean+stack" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.google.com/search?q=mean+stack"
+            target="_blank"
+            rel="noreferrer"
+          >
             MEAN
           </a>{" "}
           /{" "}
-          <a href="https://www.google.com/search?q=mern+stack" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.google.com/search?q=mern+stack"
+            target="_blank"
+            rel="noreferrer"
+          >
             MERN
           </a>{" "}
           Stack Developer
@@ -72,8 +80,16 @@ const Header = () => {
         <div className="me">
           <img src={me} alt="me" />
         </div>
-        <a className="scroll__down" title="Download Resume" href="">
-          <img className="download-resume" src={resumeIcon} alt="Download Resume" />
+        <a
+          className="scroll__down"
+          title="Download Resume"
+          href="https://drive.google.com/file/d/1ZLJislJWY9-yWEHx2Dg2WOTtRRJ_seBY/view?usp=drive_link"
+        >
+          <img
+            className="download-resume"
+            src={resumeIcon}
+            alt="Download Resume"
+          />
         </a>
       </div>
     </header>
