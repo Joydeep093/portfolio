@@ -58,11 +58,11 @@ const Header = () => {
         <h1>Joydeep Roy</h1>
         <h3 className="text-light">
           {" "}
-          <a href="https://www.google.com/search?q=mean+stack" target="_blank">
+          <a href="https://www.google.com/search?q=mean+stack" target="_blank" rel="noreferrer">
             MEAN
           </a>{" "}
           /{" "}
-          <a href="https://www.google.com/search?q=mern+stack" target="_blank">
+          <a href="https://www.google.com/search?q=mern+stack" target="_blank" rel="noreferrer">
             MERN
           </a>{" "}
           Stack Developer

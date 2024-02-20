@@ -1,7 +1,6 @@
 import React from 'react'
 import {BsLinkedin} from 'react-icons/bs'
 import {BsGithub} from 'react-icons/bs'
-import {BsMedium} from 'react-icons/bs'
 
 const HeaderSocials = () => {
   return (
@@ -9,8 +8,8 @@ const HeaderSocials = () => {
     <div className="header__socials">
 
         <a href="https://www.linkedin.com/in/joydeep-roy-42514875" target="_blank" rel='noreferrer'><BsLinkedin/></a>
-        {/* <a href="https://github.com/Thakshila-Bandara" target="_blank" rel='noreferrer'><BsGithub/></a>
-        <a href="https://medium.com/@thakshiladb2000" target="_blank" rel='noreferrer'><BsMedium/></a> */}
+        <a href="https://github.com/Joydeep093" target="_blank" rel='noreferrer'><BsGithub/></a>
+        
     </div>
   )
 }

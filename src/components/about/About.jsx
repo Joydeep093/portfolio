@@ -2,15 +2,12 @@ import React, { useState } from "react";
 import "./about.css";
 import myImage from "../../assets/me2.jpg";
 import { GiGraduateCap } from "react-icons/gi";
-import { BsArrow90DegRight, BsBookmarkStar } from "react-icons/bs";
 import {
   FaArrowDown,
-  FaArrowRight,
   FaArrowUp,
   FaCertificate,
   FaHourglassHalf,
 } from "react-icons/fa";
-import { TfiWorld } from "react-icons/tfi";
 
 const About = () => {
   let [showMore, setShowMore] = useState(false);
