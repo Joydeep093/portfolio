@@ -18,13 +18,14 @@ const Footer = () => {
       toggleNav(false);
     }
   };
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [handleScroll]);
+  }, []);
   return (
     <footer ref={ref}>
       <div className="footer__logo__socials">
