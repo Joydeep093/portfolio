@@ -84,6 +84,8 @@ const Header = () => {
           className="scroll__down"
           title="Download Resume"
           href="https://drive.google.com/file/d/1ZLJislJWY9-yWEHx2Dg2WOTtRRJ_seBY/view?usp=drive_link"
+          target="_blank"
+          rel="noreferrer"
         >
           <img
             className="download-resume"
