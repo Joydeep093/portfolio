@@ -1,0 +1,19 @@
+.light-theme {
+    /* --text-primary: var(--text-primary-light);
+    --text-secondary: var(--text-secondary-light);
+    --bg-primary: var(--bg-primary-light);
+    --bg-secondary: var(--bg-secondary-light);
+    --bg-navbar: var(--bg-navbar-light); */
+    background-color: var(--color-bg) !important;
+    background-image: url(../src/assets/climpek.png);
+  }
+  
+  .dark-theme {
+    /* --text-primary: var(--text-primary-dark);
+    --text-secondary: var(--text-secondary-dark);
+    --bg-primary: var(--bg-primary-dark);
+    --bg-secondary: var(--bg-secondary-dark);
+    --bg-navbar: var(--bg-navbar-dark); */
+    background-color: var(--color-bg-dark) !important;
+    background-image: url(../src/assets/climpek.png);
+  }
