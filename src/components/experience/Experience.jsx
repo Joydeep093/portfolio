@@ -6,10 +6,10 @@ import pwc_logo from "../../assets/pwc_logo.png";
 import dcg_logo from "../../assets/dcg_logo.png";
 
 const Experience = () => {
-  const handleDialog = () => {
-    const dialog = document.getElementById("acc_dialog");
-    dialog.showModal();
-  };
+  // const handleDialog = () => {
+  //   const dialog = document.getElementById("acc_dialog");
+  //   dialog.showModal();
+  // };
   return (
     <section id="experience">
       <h5>Organizations I have worked</h5>
