@@ -72,20 +72,20 @@ const Nav = () => {
         <BiMessageSquareDetail />
       </a>
       {!toggleIcon && (
-        <a
+        <div
           className={activeNav === "Theme" ? "active" : ""}
           onClick={() => handleThemeToggle()}
         >
           <i className="fa fa-sun-o" aria-hidden="true"></i>
-        </a>
+        </div>
       )}
       {toggleIcon && (
-        <a
+        <div
           className={activeNav === "Theme" ? "active" : ""}
           onClick={() => handleThemeToggle()}
         >
           <i className="fa fa-moon-o" aria-hidden="true"></i>
-        </a>
+        </div>
       )}
     </nav>
   );

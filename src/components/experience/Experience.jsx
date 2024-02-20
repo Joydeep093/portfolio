@@ -44,7 +44,7 @@ const Experience = () => {
           <p className="text-light">06/2019 - 09/2023</p>
           <p className="text-light">
             <FaMapMarkerAlt />
-            Kolkata, India
+             Kolkata, India
           </p>
           <div className="portfolio__item-cta">
             {/* <a
@@ -72,7 +72,7 @@ const Experience = () => {
           <p className="text-light">03/2017 - 06/2019</p>
           <p className="text-light">
             <FaMapMarkerAlt />
-            Kolkata, India
+             Kolkata, India
           </p>
           <div className="portfolio__item-cta">
             {/* <a

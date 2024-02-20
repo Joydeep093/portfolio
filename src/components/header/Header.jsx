@@ -72,7 +72,7 @@ const Header = () => {
         <div className="me">
           <img src={me} alt="me" />
         </div>
-        <a className="scroll__down" title="Download Resume">
+        <a className="scroll__down" title="Download Resume" href="">
           <img className="download-resume" src={resumeIcon} alt="Download Resume" />
         </a>
       </div>
