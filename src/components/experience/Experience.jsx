@@ -9,9 +9,9 @@ const Experience = () => {
   const handleDialog = () => {
     const dialog = document.getElementById("acc_dialog");
     dialog.showModal();
-  }
+  };
   return (
-    <section id="myprojects">
+    <section id="experience">
       <h5>Organizations I have worked</h5>
       <h2>Experience</h2>
 
@@ -24,14 +24,15 @@ const Experience = () => {
             <span>Accenture Baltics</span>
           </div>
           <p className="text-light">Senior Analyst</p>
-          <p className="text-light">09/2023 - Present</p>
+          <small className="text-light">09/2023 - Present</small>
           <p className="text-light">
-            <FaMapMarkerAlt /> Vilnius, Lithuania
+            <FaMapMarkerAlt style={{ verticalAlign: "middle" }} />{" "}
+            <small>Vilnius, Lithuania</small>
           </p>
-          <div className="portfolio__item-cta">
+          {/* <div className="portfolio__item-cta">
             <dialog id="acc_dialog">Details</dialog>
-           <p onClick={handleDialog}>Details</p>
-          </div>
+            <p onClick={handleDialog}>Details</p>
+          </div> */}
         </article>
         <article className="portfolio__item">
           <div className="exp__item-name">
@@ -41,10 +42,10 @@ const Experience = () => {
             <span>PricewaterhouseCoopers</span>
           </div>
           <p className="text-light">Manager</p>
-          <p className="text-light">06/2019 - 09/2023</p>
+          <small className="text-light">06/2019 - 09/2023</small>
           <p className="text-light">
-            <FaMapMarkerAlt />
-             Kolkata, India
+            <FaMapMarkerAlt style={{ verticalAlign: "middle" }} />{" "}
+            <small>Kolkata, India</small>
           </p>
           <div className="portfolio__item-cta">
             {/* <a
@@ -65,13 +66,13 @@ const Experience = () => {
                 alt="DCG Date Core Systems (India) Pvt. Ltd."
               />
             </aside>
-            <span>DCG Date Core Systems (India) Pvt. Ltd.</span>
+            <span>DCG Data Core Systems (India) Pvt. Ltd.</span>
           </div>
           <p className="text-light">Software Engineer</p>
-          <p className="text-light">03/2017 - 06/2019</p>
+          <small className="text-light">03/2017 - 06/2019</small>
           <p className="text-light">
-            <FaMapMarkerAlt />
-             Kolkata, India
+            <FaMapMarkerAlt style={{ verticalAlign: "middle" }} />{" "}
+            <small>Kolkata, India</small>
           </p>
           <div className="portfolio__item-cta">
             {/* <a

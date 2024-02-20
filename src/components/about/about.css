@@ -78,6 +78,10 @@
     color: var(--color-light);
 }
 
+.about__card ul li {
+    margin-bottom: 5px;
+}
+
 /* Media queries for medium devices(Tablets) */
 
 @media screen and (max-width: 1024px) {

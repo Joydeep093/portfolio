@@ -15,7 +15,11 @@ const getTheme = () => {
 
 const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(getTheme);
+  const [scrollToBottom, setsctollToBottom] = useState(false);
 
+  function toggleNav(isScrollToBottom) {
+    setsctollToBottom(isScrollToBottom)
+  }
   function toggleTheme() {
     if (theme === "dark-theme") {
       setTheme("light-theme");
@@ -38,6 +42,8 @@ const ThemeProvider = ({ children }) => {
         theme,
         setTheme,
         toggleTheme,
+        scrollToBottom,
+        toggleNav
       }}
     >
       {children}

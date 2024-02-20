@@ -9,7 +9,7 @@ import { useState } from "react";
 import { ThemeContext } from "../context/theme-context";
 
 const Nav = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { theme, toggleTheme, scrollToBottom} = useContext(ThemeContext);
   const [activeNav, setActiveNav] = useState("#");
   const [toggleIcon, setToggleIcon] = useState(false);
   const handleThemeToggle = (e) => {
@@ -35,7 +35,7 @@ const Nav = () => {
   }, [theme]);
 
   return (
-    <nav>
+    <nav className={scrollToBottom ? "hide-nav":""}>
       <a
         href="#home"
         onClick={() => setActiveNav("#")}
@@ -51,16 +51,16 @@ const Nav = () => {
         <BiUser />
       </a>
       <a
-        href="#experience"
-        onClick={() => setActiveNav("#experience")}
-        className={activeNav === "#experience" ? "active" : ""}
+        href="#skills"
+        onClick={() => setActiveNav("#skills")}
+        className={activeNav === "#skills" ? "active" : ""}
       >
         <FaLaptopCode />
       </a>
       <a
-        href="#myprojects"
-        onClick={() => setActiveNav("#myprojects")}
-        className={activeNav === "#myprojects" ? "active" : ""}
+        href="#experience"
+        onClick={() => setActiveNav("#experience")}
+        className={activeNav === "#experience" ? "active" : ""}
       >
         <GoChecklist />
       </a>
@@ -74,6 +74,7 @@ const Nav = () => {
       {!toggleIcon && (
         <div
           className={activeNav === "Theme" ? "active" : ""}
+          style={{cursor:'pointer'}}
           onClick={() => handleThemeToggle()}
         >
           <i className="fa fa-sun-o" aria-hidden="true"></i>
@@ -82,6 +83,7 @@ const Nav = () => {
       {toggleIcon && (
         <div
           className={activeNav === "Theme" ? "active" : ""}
+          style={{cursor:'pointer'}}
           onClick={() => handleThemeToggle()}
         >
           <i className="fa fa-moon-o" aria-hidden="true"></i>
