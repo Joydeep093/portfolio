@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from "react";
+import React, { useCallback, useContext, useEffect, useRef } from "react";
 import "./footer.css";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
@@ -8,7 +8,7 @@ const Footer = () => {
   const { toggleNav } = useContext(ThemeContext);
   const year = new Date().getFullYear();
   const ref = useRef();
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     if (
       window.innerHeight + Math.round(window.scrollY) >=
       document.body.offsetHeight
@@ -17,15 +17,14 @@ const Footer = () => {
     } else {
       toggleNav(false);
     }
-  };
+  }, [toggleNav]);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
   return (
     <footer ref={ref}>
       <div className="footer__logo__socials">
