@@ -58,7 +58,7 @@
 
 .show_more_skill {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     cursor: pointer;
 }
 /* Media queries for medium devices(Tablets) */
