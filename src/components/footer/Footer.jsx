@@ -24,7 +24,7 @@ const Footer = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
   return (
     <footer ref={ref}>
       <div className="footer__logo__socials">
