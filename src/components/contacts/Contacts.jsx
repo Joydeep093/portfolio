@@ -17,11 +17,11 @@ const Contacts = ({theme}) => {
   const sendEmail = (e) => {
     e.preventDefault();
     try {
-      // emailjs.send("service_ucikji3", "template_13y3cjv", {
-      //   name: form.current.name.value,
-      //   email: form.current.email.value,
-      //   message: form.current.message.value,
-      // });
+      emailjs.send("service_ucikji3", "template_13y3cjv", {
+        name: form.current.name.value,
+        email: form.current.email.value,
+        message: form.current.message.value,
+      });
       toast.success("Message Sent");
       e.target.reset();
     } catch (err) {}
